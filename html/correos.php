@@ -17,8 +17,7 @@
 
     $mensajeCompleto = $razonCita . "\nAtentamente: " .$nombres;
 
-    mail($destinatario, $email, $mensajeCompleto, $header);
+    $mail = @mail($destinatario, $email, $mensajeCompleto, $header);
     echo "<script>alert('Cita agendada exitosamente')</script>";
-    echo "<script> setTimeout(\"location.href='formulario.html'\",1000)</script>";
-
+    echo "<script> setTimeout(\"location.href='formulario.html'\"1000)</script>";
 ?>
