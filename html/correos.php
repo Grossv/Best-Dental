@@ -14,10 +14,10 @@
     $comentarios = $_POST['comentarios'];
 
     $header = "Formulario (COMPLETO)";
+    $header. = "X-Mailer: PHP/". phpversion();
 
     $mensajeCompleto = $razonCita . "\nAtentamente: " .$nombres;
 
     $mail = @mail($destinatario, $email, $mensajeCompleto, $header);
     echo "<script>alert('Cita agendada exitosamente')</script>";
-    echo "<script> setTimeout(\"location.href='formulario.html'\"1000)</script>";
-?>
+    //echo "<script> setTimeout(\"location.href='formulario.php'\"1000)</script>";
