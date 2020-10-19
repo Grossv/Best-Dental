@@ -20,4 +20,4 @@
 
     $mail = @mail($destinatario, $email, $mensajeCompleto, $header);
     echo "<script>alert('Cita agendada exitosamente')</script>";
-    //echo "<script> setTimeout(\"location.href='formulario.php'\"1000)</script>";
+    echo "<script> setTimeout(\"location.href='formulario.php'\"1000)</script>";
