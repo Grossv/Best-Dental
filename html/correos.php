@@ -32,5 +32,5 @@
 
     mail($destinatario, $asunto, utf8_decode($mensajeCompleto), $header);
 
-    header("Location:../index.html");
+    header("Location:formulario.html");
 ?>
