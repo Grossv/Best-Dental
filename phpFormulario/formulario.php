@@ -1,4 +1,35 @@
-<!--  
+<?php
+$result="";
+if(isset($_POST['submit'])){
+    require 'phpmailer/PHPMailerAutoload.php';
+    $mail = new PHPMailer;
+    $mail->isSMTP();
+    $mail->Host='smtp.gmail.com';
+    $mail->Port=587;
+    $mail->SMTPAuth=true;
+    $mail->SMTPSecure='tls';
+    $mail->Username='bestdental.supp@gmail.com';
+    $mail->Password='Chococrispy747.';
+
+    $mail->setFrom($_POST['email'],$_POST['nombres']);
+    $mail->addAddress('bestdental.supp@gmail.com');
+    $mail->addReplyTo($_POST['email'],$_POST['nombres']);
+
+    $mail->isHTML(true);
+    $mail->Subject='Enviado por '.$_POST['email'];
+    $mail->Body='<h1 align=center>Nombre: '.$_POST['nombres'].$_POST['apellidos'].'<br>Email: '.$_POST['email'].'<br>Telefono: '.$_POST['telefono'].'<br>Fecha de cita: '.$_POST['primeraFecha'].'<br>Fecha secundaria para cita: '.$_POST['segundaFecha'].'<br>Ultima opcion para cita: '.$_POST['terceraFecha'].'<br>Hora: '.$_POST['hora'].'<br>Razon de la cita: '.$_POST['razonCita'].'<br>Comentarios y preguntas del paciente: '.$_POST['comentarios'].'</h1>';
+
+    if(!$mail->send()){
+    $result="Algo anda mal :(  intentelo de nuevo por favor";
+    }
+    else
+    {
+    $result="Gracias".$_POST['nombres']."por agendar tu cita, pronto nos contactaremos para confirmar tu cita!";
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,7 +40,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="correos.php" method="post" id="form">
+    <form action="" method="post" id="form">
         <div class="form">
             <h1>Registro</h1>
             <h3 class="subtitulo">Información de contacto</h3>
@@ -75,8 +106,8 @@
                 <label for="" class="agregadas">Comentarios y Preguntas</label>
             </div>
             <button type="submit">Enviar</button>
+            <h5 class="notifCorrecto"> <?= $result; ?></h5>
         </div>
     </form>
 </body>
 </html>
--->
