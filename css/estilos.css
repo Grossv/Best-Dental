@@ -162,11 +162,11 @@ body{
 
     .cta{
     display: inline-block;
-    width: 75px;
-    padding: 7px 0;
+    width: 20px;
+    padding: 5px 0;
     text-align: center;
     background: #fff;
-    border-radius: 4px;
+    border-radius: 2px;
     text-decoration: none;
     color: #085078 ;
     margin-top: 5px;
