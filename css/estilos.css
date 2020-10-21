@@ -123,12 +123,17 @@ body{
 }
 
 @media screen and (max-width: 500px){
+    .contenedor{
+        margin: 5px;
+    }
+
     .wave{
         width: auto;
-        height: 48%;
+        height: 40%;
     }
 
     .contenedor-textos{
+        padding-top: 0px;
         flex-basis: 40%;
         justify-content: flex-start;
     }
@@ -155,7 +160,7 @@ body{
 
     .content-foot p{
         color: #fff;
-        border-bottom: 1px solid #fff;
+        /*border-bottom: 1px solid #fff;*/
         padding-bottom: 20px;
     }
 
