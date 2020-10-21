@@ -120,6 +120,10 @@ body{
 }
 
 @media screen and (max-width: 500px){
+    .contenedor{
+        margin-top: 48px;
+    }
+
     .wave{
         width: auto;
         height: 48%;
@@ -128,7 +132,6 @@ body{
     .contenedor-textos{
         flex-basis: 40%;
         justify-content: flex-start;
-        margin-top: 2cm;
     }
 
     .titulo{
