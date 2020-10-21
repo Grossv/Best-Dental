@@ -23,12 +23,12 @@ $header .= "Content-Type: text-plain";
 $mensajeCompleto = "Este mensaje fue enviado por: " .$nombres .$apellidos . "\r\n";
 $mensajeCompleto .= "Su email es: " .$email . "\r\n";
 $mensajeCompleto .= "Telefono de contacto: " .$telefono . "\r\n";
-/*$mensajeCompleto .= "Su primera Fecha agendada es el: " .$primeraFecha . "\r\n";
+$mensajeCompleto .= "Su primera Fecha agendada es el: " .$primeraFecha . "\r\n";
 $mensajeCompleto .= "Su segunda Fecha agendada es el: " .$segundaFecha . "\r\n";
 $mensajeCompleto .= "Su tercera Fecha agendada es el: " .$terceraFecha . "\r\n";
 $mensajeCompleto .= "Agendo cita debido a que experimenta: " .$razonCita . "\r\n";
 $mensajeCompleto .= "Comentarios o preguntas de este paciente: " .$comentarios . "\r\n";
-$mensajeCompleto .= "Enviado el: " .date('d/m/Y', time());*/
+$mensajeCompleto .= "Enviado el: " .date('d/m/Y', time());
 
 $asunto = 'Cita Agendada';
 
