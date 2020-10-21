@@ -159,6 +159,18 @@ body{
     .titulo-final{
         font-size: 20px;
     }
+
+    .cta{
+    display: inline-block;
+    width: 75px;
+    padding: 7px 0;
+    text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #085078 ;
+    margin-top: 5px;
+}
 }
 
 /* Footer */
