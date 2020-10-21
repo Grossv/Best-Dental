@@ -120,10 +120,6 @@ body{
 }
 
 @media screen and (max-width: 500px){
-    .contenedor{
-        margin-top: 48px;
-    }
-
     .wave{
         width: auto;
         height: 48%;
@@ -165,16 +161,16 @@ body{
     }
 
     .cta{
-    display: inline-block;
-    width: 20px;
-    padding: 5px 0;
-    text-align: center;
-    background: #fff;
-    border-radius: 2px;
-    text-decoration: none;
-    color: #085078 ;
-    margin-top: 5px;
-}
+        display: inline-block;
+        width: 20px;
+        padding: 5px 0;
+        text-align: center;
+        background: #fff;
+        border-radius: 2px;
+        text-decoration: none;
+        color: #085078 ;
+        margin-top: 5px;
+    }
 }
 
 /* Footer */
