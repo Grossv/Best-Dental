@@ -11,7 +11,7 @@ body{
 }
 .contenedor{
     position: relative;
-    height: 800px;
+    height: 650px;
     display: flex;
     align-items: center;
 }
