@@ -11,7 +11,7 @@ body{
 }
 .contenedor{
     position: relative;
-    height: 600px;
+    height: 800px;
     display: flex;
     align-items: center;
 }
@@ -107,6 +107,9 @@ body{
 
     .subtitulo{
         font-size: 20px;
+    }
+
+    .contenedor-imagen{
         flex-basis: 60%;
         width: 60%;
         display: flex;
@@ -160,17 +163,6 @@ body{
         font-size: 20px;
     }
 
-    .cta{
-        display: inline-block;
-        width: 20px;
-        padding: 5px 0;
-        text-align: center;
-        background: #fff;
-        border-radius: 2px;
-        text-decoration: none;
-        color: #085078 ;
-        margin-top: 5px;
-    }
 }
 
 /* Footer */
